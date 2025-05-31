@@ -18,7 +18,7 @@ variable "az2" {
 // IAM role that has proper permission for HA
 // Refer to https://docs.fortinet.com/vm/aws/fortigate/6.2/aws-cookbook/6.2.0/229470/deploying-fortigate-vm-active-passive-ha-aws-between-multiple-zones
 variable "iam" {
-  default = "isina2"
+  default = "seahk-is-fgt_ha_ap"
 }
 
 // VPC for FortiGate Security VPC
@@ -111,7 +111,7 @@ variable "arch" {
 // c6g.xlarge is arm
 // For detail, refer to https://aws.amazon.com/ec2/instance-types/
 variable "size" {
-  default = "c5.large"
+  default = "c5.xlarge"
 }
 
 // License Type to create FortiGate-VM
@@ -445,7 +445,7 @@ variable "fgtami" {
 
 //  Existing SSH Key on the AWS 
 variable "keyname" {
-  default = "<AWS SSH KEY>"
+  default = "isina2"
 }
 
 //  Admin HTTPS access port
