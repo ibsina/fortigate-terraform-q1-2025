@@ -1,24 +1,24 @@
 //AWS Configuration
-variable "access_key" {}
-variable "secret_key" {}
+//variable "access_key" {}
+//variable "secret_key" {}
 
 variable "region" {
-  default = "eu-west-1"
+  default = "ap-southeast-3"
 }
 
 // Availability zones for the region
 variable "az1" {
-  default = "eu-west-1a"
+  default = "ap-southeast-3a"
 }
 
 variable "az2" {
-  default = "eu-west-1b"
+  default = "ap-southeast-3b"
 }
 
 // IAM role that has proper permission for HA
 // Refer to https://docs.fortinet.com/vm/aws/fortigate/6.2/aws-cookbook/6.2.0/229470/deploying-fortigate-vm-active-passive-ha-aws-between-multiple-zones
 variable "iam" {
-  default = "<AWS IAM Role>"
+  default = "isina2"
 }
 
 // VPC for FortiGate Security VPC
@@ -111,7 +111,7 @@ variable "arch" {
 // c6g.xlarge is arm
 // For detail, refer to https://aws.amazon.com/ec2/instance-types/
 variable "size" {
-  default = "c5.xlarge"
+  default = "c5.large"
 }
 
 // License Type to create FortiGate-VM
