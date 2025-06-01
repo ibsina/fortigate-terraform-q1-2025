@@ -63,7 +63,7 @@ variable "fgtport1ip" {
 }
 
 variable "fgtport2ip" {
-  default = ["10.0.0.21"]
+  default = ["10.1.0.21"]
 }
 
 variable "fgtport3ip" {
@@ -79,7 +79,7 @@ variable "fgt2port2ip" {
 }
 
 variable "fgt2port3ip" {
-  default = ["10.0.0.118"]
+  default = ["10.1.0.118"]
 }
 
 // VPC for Customer VPC
