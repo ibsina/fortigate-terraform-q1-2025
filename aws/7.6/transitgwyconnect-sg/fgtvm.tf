@@ -11,6 +11,7 @@ resource "aws_network_interface" "eth1" {
   private_ips       = var.fgtport2ip
   source_dest_check = false
 }
+
 resource "aws_network_interface" "eth2" {
   description       = "fgtvm-port3"
   subnet_id         = aws_subnet.hasyncsubnetaz1.id

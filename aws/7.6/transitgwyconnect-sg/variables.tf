@@ -3,63 +3,63 @@ variable "access_key" {}
 variable "secret_key" {}
 
 variable "region" {
-  default = "eu-west-1"
+  default = "ap-southeast-1"
 }
 
 // Availability zones for the region
 variable "az1" {
-  default = "eu-west-1a"
+  default = "ap-southeast-1a"
 }
 
 variable "az2" {
-  default = "eu-west-1b"
+  default = "ap-southeast-1b"
 }
 
 // IAM role that has proper permission for HA
 // Refer to https://docs.fortinet.com/vm/aws/fortigate/6.2/aws-cookbook/6.2.0/229470/deploying-fortigate-vm-active-passive-ha-aws-between-multiple-zones
 variable "iam" {
-  default = "<AWS IAM Role>"
+  default = "seahk-is-fgt_ha_ap"
 }
 
 // VPC for FortiGate Security VPC
 variable "vpccidr" {
-  default = "10.0.0.0/24"
+  default = "10.1.0.0/24"
 }
 
 variable "publiccidraz1" {
-  default = "10.0.0.0/28"
+  default = "10.1.0.0/28"
 }
 
 variable "privatecidraz1" {
-  default = "10.0.0.16/28"
+  default = "10.1.0.16/28"
 }
 
 variable "attachcidraz1" {
-  default = "10.0.0.32/28"
+  default = "10.1.0.32/28"
 }
 
 variable "hasynccidraz1" {
-  default = "10.0.0.48/28"
+  default = "10.1.0.48/28"
 }
 
 variable "publiccidraz2" {
-  default = "10.0.0.64/28"
+  default = "10.1.0.64/28"
 }
 
 variable "privatecidraz2" {
-  default = "10.0.0.80/28"
+  default = "10.1.0.80/28"
 }
 
 variable "attachcidraz2" {
-  default = "10.0.0.96/28"
+  default = "10.1.0.96/28"
 }
 
 variable "hasynccidraz2" {
-  default = "10.0.0.112/28"
+  default = "10.1.0.112/28"
 }
 
 variable "fgtport1ip" {
-  default = ["10.0.0.5"]
+  default = ["10.1.0.5"]
 }
 
 variable "fgtport2ip" {
@@ -67,15 +67,15 @@ variable "fgtport2ip" {
 }
 
 variable "fgtport3ip" {
-  default = ["10.0.0.54"]
+  default = ["10.1.0.54"]
 }
 
 variable "fgt2port1ip" {
-  default = ["10.0.0.70"]
+  default = ["10.1.0.70"]
 }
 
 variable "fgt2port2ip" {
-  default = ["10.0.0.86"]
+  default = ["10.1.0.86"]
 }
 
 variable "fgt2port3ip" {
@@ -111,7 +111,7 @@ variable "arch" {
 // c6g.xlarge is arm
 // For detail, refer to https://aws.amazon.com/ec2/instance-types/
 variable "size" {
-  default = "c5.xlarge"
+  default = "c5.1large"
 }
 
 // License Type to create FortiGate-VM
