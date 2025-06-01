@@ -111,7 +111,7 @@ variable "arch" {
 // c6g.xlarge is arm
 // For detail, refer to https://aws.amazon.com/ec2/instance-types/
 variable "size" {
-  default = "c5.1large"
+  default = "c5.large"
 }
 
 // License Type to create FortiGate-VM
@@ -445,7 +445,7 @@ variable "fgtami" {
 
 //  Existing SSH Key on the AWS 
 variable "keyname" {
-  default = "<AWS SSH KEY>"
+  default = "fgt_sg"
 }
 
 //  Admin HTTPS access port
