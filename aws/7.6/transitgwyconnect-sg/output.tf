@@ -7,9 +7,10 @@ output "FGTPublicIP" {
   value = aws_eip.FGTPublicIP.public_ip
 }
 
-output "FGTPrimaryIP" {
+/*output "FGTPrimaryIP" {
   value = aws_eip.FGTPrimaryIP.public_ip
 }
+*/
 
 output "FGTSecondaryIP" {
   value = aws_eip.FGTSecondaryIP.public_ip
