@@ -83,7 +83,7 @@ resource "aws_ec2_transit_gateway_connect_peer" "example" {
 # transit gateway connect peer to secondary
 resource "aws_ec2_transit_gateway_connect_peer" "example2" {
   peer_address                  = var.fgt2port2ip[0]
-  bgp_asn                       = "7116"
+  bgp_asn                       = "7115"
   transit_gateway_address       = "1.0.0.69"
   inside_cidr_blocks            = ["169.254.102.0/29"]
   transit_gateway_attachment_id = aws_ec2_transit_gateway_connect.attachment.id
